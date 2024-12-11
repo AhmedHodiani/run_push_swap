@@ -6,7 +6,7 @@
 #    By: ataher <ataher@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/08 12:57:18 by ataher            #+#    #+#              #
-#    Updated: 2024/12/08 12:57:18 by ataher           ###   ########.fr        #
+#    Updated: 2024/12/11 14:36:49 by ataher           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,6 +47,8 @@ if __name__ == "__main__":
 
 	print(f"\033[94mTest ran successfully {args.run_program_count} times, with {args.numbers_count} random numbers in the range {min_range} to {max_range}\033[0m")
 	print(f"Average operations: {sum(oparations) / len(oparations)}")
+	print(f"Median operations: {sorted(oparations)[int(len(oparations) / 2)]}")
 	print(f"Max operations: {max(oparations)}")
 	print(f"Min operations: {min(oparations)}")
 	print(f"90% of data lay between: {sorted(oparations)[int(len(oparations) * 0.1)]} and {sorted(oparations)[int(len(oparations) * 0.9)]}")
+	print(f"95% of data lay between: {sorted(oparations)[int(len(oparations) * 0.05)]} and {sorted(oparations)[int(len(oparations) * 0.95)]}")
